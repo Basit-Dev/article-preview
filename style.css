@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: Manrope;
+  background-color: hsl(210, 46%, 95%);
+}
+h1,
+h2,
+p {
+  font-size: 2em;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  line-height: 1.4;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  max-width: 750px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 10px 20px 90px hsl(210, 17%, 77%);
+}
+.content_top p {
+  color: #6e8098;
+  line-height: 1.7;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.image {
+  background-image: url("./images/drawers.jpg");
+  width: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 0 0 10px;
+}
+article {
+  padding: 30px;
+}
+article p {
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.bottom_content {
+  margin-top: 20px;
+}
+.bottom_content p {
+  margin-left: 50px;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding-top: 0;
+}
+.bottom_content p:nth-child(3) {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.avatar {
+  border-radius: 50%;
+  float: left;
+  width: 9%;
+}
+.share {
+  background-image: url("./images/icon-share.svg");
+  width: 8%;
+  border-radius: 50%;
+  background-color: rgb(224, 224, 224);
+  float: right;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
