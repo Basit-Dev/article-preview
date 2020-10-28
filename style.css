@@ -4,12 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   font-size: 10px;
   font-family: Manrope;
   background-color: hsl(210, 46%, 95%);
 }
+/* GLOBAL SETTINGS */
 h1,
 h2,
 p {
@@ -22,8 +22,7 @@ p {
   width: 100vw;
   height: 100vh;
 }
-
-.content {
+.content_wrapper {
   display: flex;
   width: 680px;
   position: relative;
@@ -32,6 +31,7 @@ p {
   transform: translate(-50%, -50%);
   background: white;
   border-radius: 10px;
+  box-shadow: 5px 22px 50px gray;
 }
 .image_container {
   width: 100%;
@@ -50,14 +50,14 @@ p {
   height: 100%;
 }
 .article_info h1 {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 15px;
 }
 .article_info p,
 .user_info p {
-  font-size: 12px;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -65,16 +65,17 @@ p {
   position: relative;
   display: inline-flex;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 20px;
+}
+.avatar {
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;
 }
 .caption {
   margin-left: 20px;
 }
-.avatar {
-  width: 10%;
-  border-radius: 50%;
-}
-.share {
+.share_icon {
   position: absolute;
   right: 0;
   padding: 8px;
@@ -82,4 +83,50 @@ p {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+}
+.attribution {
+  text-align: center;
+  margin-top: 20px;
+}
+/* MEDIA QUERY SETTINGS */
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+  .content_wrapper {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    max-width: 85%;
+  }
+  .image_container {
+    display: block;
+    height: 180px;
+  }
+  .image {
+    background-image: url("./images/drawers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .article_info {
+    padding: 2.5rem;
+  }
+  .article_info h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+  .article_info p,
+  .user_info p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
 }
